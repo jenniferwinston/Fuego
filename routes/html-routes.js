@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.end("HOME PAGE");
+	console.log("HITTING HOMEPAGE");
+	res.sendFile('index.html');
 });
 
 router.get('/tables', function(req, res, next) {
