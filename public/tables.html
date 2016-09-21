@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="description" content="Hot Restaurant">
+    <meta name="keywords" content="table reservations">
+    <!-- <link rel="icon" href="assets/img/favicon.ico"> -->
+
+    <title>Hot Restaurant</title>
+
+    <!-- CDN Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Global stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">EL FUEGO</a>
+            </div>
+        </div> <!--/.container -->
+    </nav> <!--/.navbar -->
+
+    <div class="jumbotron text-center">
+        <div class="container">
+			<span class="glyphicon glyphicon-fire" aria-hidden="true" style="color:red; font-size:70px;"></span>
+            <br>
+            <h1>RESTAURANT EL FUEGO</h1>
+            <br>
+            <h2>Current Reservations and Waiting List</h2>
+            <a href="/reserve"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a>
+            <a href="/index"><button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-home"></span> </button></a>
+        </div>
+    </div>
+
+    <div class="panel panel-default">   
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>Current Reservations</strong></h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="well" id="tableWell-01">
+                            <h2>
+                            <span class="label label-primary">1</span> | bob
+                            </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><strong>Waiting List</strong></h3>
+        </div>
+        <div class="panel-body">
+            <div class="well" id="tableWell-01">
+                <h2>
+                <span class="label label-primary">1</span> | bob
+                </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script type="text/javascript">
+        $('#searchBtn').on('click', function () {
+            var searchedCharacter = $('#characterSearch').val().trim();
+
+            searchedCharacter = searchedCharacter.replace(/\s+/g, '').toLowerCase();
+
+            $.get('http://localhost:3000/api/' + searchedCharacter, function (data) {
+                console.log(data);
+                if (data) {
+                    $('#stats').show();
+                    $('#name').text(data.name);
+                    $('#role').text(data.role);
+                    $('#age').text(data.age);
+                    $('#forcePoints').text(data.forcePoints);
+                } else {
+                    $('#name').text('The force is not strong with this one. Your character was not found. ');
+                    $('#stats').hide();
+                }
+            });
+        });S
+    </script> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <p class="text-muted text-left">UCF Coding Bootcamp 2016</p>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <p class="text-muted text-center">Made with <span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:red;"></span> by Group 5</p>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <p class="text-muted text-right">Copyright &copy 2016. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================================================== -->
+    <!-- CDN jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
+    <!-- CDN Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <!-- App JavaScript -->
+    <!-- <script src="js/script.js"></script> -->
+    <!-- ======================================================== -->
+</body>
+</html>
