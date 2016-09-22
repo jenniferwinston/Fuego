@@ -17,6 +17,19 @@
         crossorigin="anonymous">
     <!-- Global stylesheet -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+     <style>
+    body{
+        background-image: url("assets/background.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+        color: white;
+    }
+    .row {
+        color: grey;
+    }
+    </style>
 </head>
 <body>
 
@@ -28,7 +41,7 @@
         </div> <!--/.container -->
     </nav> <!--/.navbar -->
 
-    <div class="jumbotron text-center">
+    <div class="text-center">
         <div class="container">
 			<span class="glyphicon glyphicon-fire" aria-hidden="true" style="color:red; font-size:70px;"></span>
             <br>
@@ -36,10 +49,13 @@
             <br>
             <h2>Current Reservations and Waiting List</h2>
             <a href="/reserve"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a>
-            <a href="/index"><button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-home"></span> </button></a>
+            <a href="/index"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-home"></span> </button></a>
         </div>
     </div>
-
+    <br>
+  <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
     <div class="panel panel-default">   
                     <div class="panel-heading">
                         <h3 class="panel-title"><strong>Current Reservations</strong></h3>
@@ -53,6 +69,12 @@
                         </div>
                     </div>
                 </div>
+    </div>
+    </div>
+    </div>
+<div class="row">
+<div class="col-lg-3"></div>
+    <div class="col-lg-6">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title"><strong>Waiting List</strong></h3>
@@ -66,6 +88,9 @@
             </div>
         </div>
     </div>
+</div>
+</div>
+</div>    
 
     <!-- <script type="text/javascript">
         $('#searchBtn').on('click', function () {
