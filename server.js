@@ -2,10 +2,9 @@
 // =============================================================
 var express = require('express');
 var bodyParser = require('body-parser');
-var path = require('path');
 
-var api_routes = require('./routes/api-routes.js');
-var html_routes = require('./routes/html-routes.js');
+require('./routes/api-routes.js')(app);
+require('./routes/html-routes.js')(app);
 
 // Sets up the Express App
 // =============================================================
@@ -18,9 +17,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/', api_routes);
-app.use('/', html_routes);
 
 // Starts the server to begin listening
 // =============================================================
